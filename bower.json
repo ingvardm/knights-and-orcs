@@ -1,7 +1,6 @@
 {
   "name": "knightsandorks",
   "dependencies": {
-    "require1k": "^1.0.0",
-    "mustache.js": "mustache#^2.3.0"
+    "require1k": "^1.0.0"
   }
 }
