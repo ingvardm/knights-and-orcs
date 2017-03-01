@@ -9,13 +9,13 @@ class Text {
         this.fontSize = cfg.fontSize;
         this.fontFamily = cfg.fontFamily;
         this.color = cfg.color || '#000000';
-        this.text = cfg.value || 'text';
+        this.value = cfg.value || 'text';
     }
 
     render(offset={x:0,y:0}){
         _canvas.ctx.font = this.fontSize+'px '+this.fontFamily;
-        _canvas.ctx.fillStyle = "red";
-        _canvas.ctx.fillText(this.text, offset.x + this.x, offset.y + this.y + this.fontSize);
+        _canvas.ctx.fillStyle = this.color;
+        _canvas.ctx.fillText(this.value, offset.x + this.x, offset.y + this.y + this.fontSize);
     }
 }
 

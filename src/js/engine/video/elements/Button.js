@@ -1,6 +1,5 @@
 'use_strict';
 
-var _canvas = require('../canvas');
 var Shape = require('./Shape');
 
 class Button extends Shape{

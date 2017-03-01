@@ -1,5 +1,21 @@
 module.exports = {
-    path:{
-        mustache: '../vendor/mustache.js/mustache.min'
+    engineConfig: {
+        subsystems: [
+            'video',
+            'input'
+        ],
+
+        video: {
+            resolution: {
+                x:600,
+                y:400
+            }
+        },
+
+        input: {
+            mouse: {
+                handleClicks: true
+            }
+        }
     }
 }
